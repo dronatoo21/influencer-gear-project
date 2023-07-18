@@ -1,8 +1,13 @@
 /*Common shared styles*/
 *{
-   
+   margin: 0%;
+   padding: 0%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #3A3A3A;;
+    color: #3A3A3A;
+}
+
+.hide{
+    display: none;
 }
 
 
@@ -15,8 +20,7 @@ header{
 .nav-container{
     display: flex;
     justify-content: space-around;
-    gap: 80px;
-    height: 200px;
+    padding: 70px 0px;
     align-items: center;
     
 }
@@ -40,6 +44,7 @@ header{
 .nav-links ul{
     display: flex;
     justify-content: space-between;
+    margin: auto;
 }
 
 .nav-links ul li{
@@ -50,9 +55,12 @@ header{
 
 .banner{
     display: flex;
-    justify-content: center;
-    gap: 30rem;
+    justify-content: space-around;
     align-items: center;
+}
+
+.banner-content{
+    padding: 10px;
 }
 
 .banner-title{
@@ -74,14 +82,22 @@ header{
     color: #fff;
     border: 0;
     outline: none;
+    transition: background-color 0.6s ease-in;
+}
+
+.banner-btn:hover{
+    background-color: #3A3A3A;
+    padding: 10px 26px;
 }
 
 .banner-img{
     background-image: url("./images/Circle\ design.svg");
     background-size: cover;
-    height: 400px;
-    width: 400px;
     display: flex;
+}
+
+.banner-img img{
+    width: auto;
 }
 
 /*---------Sponsors section---------*/
@@ -92,4 +108,146 @@ header{
     width: 80%;
     margin: auto;
     margin-top: 30px;
+}
+
+/*--------popular collection styles---------*/
+
+.popular-collection{
+    text-align: center;
+    margin-top: 150px;
+    width: 80%;
+    margin: 150px auto auto auto;
+    padding: 60px;
+}
+
+.popular-collection-title{
+    margin-bottom: 80px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+    width: 80%;
+    margin: auto;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.card{
+    width: 85%;
+    padding: 20px;
+    height: 430px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px gainsboro;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card-title{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*responsive*/
+
+@media screen and (max-width:661px) {
+    /*nav styles*/
+    .nav-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .nav-links ul li{
+        margin-top: 20px;
+    }
+
+    /*banner styles*/
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .banner-img{
+        margin-bottom: 40px;
+    }
+
+    .banner-content{
+        text-align: center;
+        padding: 30px;
+    }
+
+    .spondors{
+        margin-top: 480px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card-container{
+        grid-template-columns:1fr;
+    }
+}   
+
+
+@media screen and (min-width:661px) and (max-width:1000px){
+    /*nav styles*/
+    .nav-container{
+        flex-direction: column;
+    }
+
+    .nav-links ul{
+        align-items: center;     
+    }
+
+    .nav-links ul li{
+        margin-top: 20px;
+    }
+
+    /*banner styles*/
+    .banner{
+        margin-top: -30px;
+        flex-direction: column;
+    }
+
+    .banner-img{
+        margin-top: 50px;
+    }
+
+    /*sponsors section*/
+    .spondors{
+        margin-top: 280px;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        padding-left: 60px;
+        gap: 20px;
+    }
+
+    /*collection*/
+
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: auto;
+    }
 }
