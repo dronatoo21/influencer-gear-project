@@ -1,0 +1,95 @@
+/*Common shared styles*/
+*{
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #3A3A3A;;
+}
+
+
+/*----------Header section styles----------*/
+/*Nav section styles*/
+header{
+    height: 700px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    height: 200px;
+    align-items: center;
+    
+}
+
+.nav-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav-links{
+    width: 600px;
+}
+
+.nav-links ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links ul li{
+    list-style: none;
+}
+
+/*Banner styles*/
+
+.banner{
+    display: flex;
+    justify-content: center;
+    gap: 30rem;
+    align-items: center;
+}
+
+.banner-title{
+    margin-bottom: 20px;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.banner-des{
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.banner-btn{
+    padding: 10px 24px;
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #fff;
+    border: 0;
+    outline: none;
+}
+
+.banner-img{
+    background-image: url("./images/Circle\ design.svg");
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    display: flex;
+}
+
+/*---------Sponsors section---------*/
+
+.spondors{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
