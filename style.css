@@ -133,8 +133,7 @@ header{
     padding: 40px;
     width: 80%;
     margin: auto;
-    column-gap: 20px;
-    row-gap: 40px;
+    row-gap: 30px;
 }
 
 .card{
@@ -152,15 +151,6 @@ header{
 .card-title{
     margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
 
 /*responsive*/
 
@@ -247,7 +237,7 @@ header{
 
     .card-container{
         grid-template-columns: repeat(2, 1fr);
-        width: 100%;
+        width: 90%;
         margin: auto;
     }
 }
